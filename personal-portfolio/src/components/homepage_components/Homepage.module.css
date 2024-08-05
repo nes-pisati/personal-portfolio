@@ -1,0 +1,19 @@
+.section {
+    height: 85vh;
+}
+
+.title {
+    font-family: "Antonio";
+    text-transform: uppercase;
+    font-size: 21em;
+    color: black;
+    line-height: 1;
+    padding-left: 5%;
+}
+
+.subtitle {
+    text-align: right;
+    font-family: "Alata";
+    font-size: 1.3em;
+    line-height: 1;
+}
