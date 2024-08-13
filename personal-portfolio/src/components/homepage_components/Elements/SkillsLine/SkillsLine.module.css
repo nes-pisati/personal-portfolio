@@ -1,0 +1,7 @@
+.skillsText {
+    font-family: "Antonio";
+    text-transform: uppercase;
+    font-size: 7em;
+    overflow: hidden;
+    line-height: 1.1;
+}

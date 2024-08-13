@@ -1,12 +1,14 @@
 .section {
-    height: 85vh;
+    height: calc(100vh - 60px);
+    padding: 0 !important;
 }
+
+/*HERO STYLES*/
 
 .title {
     font-family: "Antonio";
     text-transform: uppercase;
     font-size: 21em;
-    color: black;
     line-height: 1;
     padding-left: 5%;
 }
@@ -16,4 +18,13 @@
     font-family: "Alata";
     font-size: 1.3em;
     line-height: 1;
+}
+
+/*PROJECTS STYLE*/
+
+.ProjectTitle {
+    font-family: "Alata";
+    font-size: 1.3em;
+    text-transform: uppercase;
+    margin: 2% 0 !important;
 }

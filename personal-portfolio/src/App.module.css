@@ -5,13 +5,15 @@ body {
   margin: 0;
 }
 
-.darkMode {
-  background-color: black;
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
-  color: white;
+  overflow: hidden;
 }
 
-.lightMode {
-  background-color: white;
-  color: black;
+.sectionWrapper {
+  flex: 1;
+  height: fit-content;
+  overflow-y: auto;
 }
