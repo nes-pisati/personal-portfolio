@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("/fonts/Gilroy-Regular.ttf") format("truetype");
+    font-weight: 400;
+    /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("/fonts/Gilroy-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    /* SemiBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("/fonts/Gilroy-Bold.ttf") format("truetype");
+    font-weight: 700;
+    /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("/fonts/Gilroy-Black.ttf") format("truetype");
+    font-weight: 900;
+    /* Black */
+    font-style: normal;
+}
+
+
+@theme {
+    --color-beige: #DED4C0;
+    --color-white-100: #efefef;
+    --color-black: #0C0C0C;
+    --font: "Gilroy", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    background-color: var(--color-black);
+    color: var(--color-beige);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: var(--font);
+}
+
+p {
+    font-size: 0.9em;
+}
+
+.bg-beige {
+    background-color: var(--color-beige);
+    color: var(--color-black);
+}
+
+.bg-black {
+    background-color: var(--color-black);
+    color: var(--color-beige);
+}
+
+.main-title {
+    font-size: 11em;
+    font-weight: 700;
+    color: transparent;
+}
+
+.title-beige {
+    -webkit-text-stroke: 2px var(--color-beige)
+}
+
+.title-black {
+    -webkit-text-stroke: 2px var(--color-black)
+}
+
+.button {
+    @apply px-5 py-3 border-2 rounded-3xl min-w-50 mr-10 text-xs;
+    background-color: var(--color-black);
+}
+#runaway-btn {
+    box-sizing: border-box;
+}
+
+@utility flex-center {
+    @apply flex justify-center items-center;
+}
+
+@utility padding-x {
+    @apply pl-20 pr-20
+}
+
+@layer components {
+
+    .contacts {
+        @apply h-screen
+    }
+
+    .contacts-container {
+        @apply flex flex-col justify-between
+    }
+
+    .contacts-textes {
+        @apply h-screen
+    }
+
+    .contacts-footer {
+        @apply flex justify-between items-center gap-10
+    }
+}
